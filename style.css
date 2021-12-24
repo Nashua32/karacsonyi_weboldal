@@ -1,0 +1,70 @@
+html, body {
+  height: 100%;
+}
+
+.button {
+    border: none;
+    color: white;
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 10px 30px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+  }
+  
+  .sudoku {
+      background-color: #00aa39;
+  }
+
+  .sudoku:hover {
+    background-color: #01d347;
+  }
+
+  .corridor_lights {
+      color: black;
+      background-color: #ffee00;
+  }
+
+  .corridor_lights:hover {
+        background-color: #ffd151;
+  }
+
+  .lovoldozos {
+      background-color: #a70000;
+  }
+
+  .lovoldozos:hover {
+      background-color: #a33a0a;
+  }
+
+  .center {
+    margin-left: auto;
+    margin-right: auto;
+    right: 50%;
+    bottom: 50%;
+    transform: translate(50%,50%);
+    position: absolute;
+  }
+
+  h1 {
+    margin-top: 80px;
+    margin-bottom: 50px;
+    text-align: center;
+    color: #530000;
+    font-size: 50px;
+  }
+
+  h2 {
+    text-align: center;
+  }
+
+  p {
+    text-align: center;
+  }
+
+  td {
+      text-align:center
+  }
