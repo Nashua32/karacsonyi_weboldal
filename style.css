@@ -1,3 +1,7 @@
+html, body {
+  height: 100%;
+}
+
 .button {
     border: none;
     color: white;
@@ -19,29 +23,41 @@
     background-color: #01d347;
   }
 
-  .lovoldozos {
+  .corridor_lights {
       color: black;
       background-color: #ffee00;
   }
 
-  .lovoldozos:hover {
+  .corridor_lights:hover {
         background-color: #ffd151;
   }
 
-  .tetris {
-      background-color: #7201cf;
+  .lovoldozos {
+      background-color: #a70000;
   }
 
-  .tetris:hover {
-      background-color: #9501cf;
+  .lovoldozos:hover {
+      background-color: #a33a0a;
   }
 
   .center {
     margin-left: auto;
     margin-right: auto;
+    right: 50%;
+    bottom: 50%;
+    transform: translate(50%,50%);
+    position: absolute;
   }
 
   h1 {
+    margin-top: 80px;
+    margin-bottom: 50px;
+    text-align: center;
+    color: #530000;
+    font-size: 50px;
+  }
+
+  h2 {
     text-align: center;
   }
 
