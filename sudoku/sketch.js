@@ -31,9 +31,27 @@ function setup() {
 
 function createCheckButton() {
   button = createButton("Ellenőrzés");
-  button.position(canvasSize-120, canvasSize+20);
+  button.position(boardSize-120, boardSize+20);
   button.mousePressed(checkSolution);
   button.size(100);
+  button.style('background-color', '#8E00D1');
+  button.style('transition-duration', '0.4s');
+  button.style('border', 'none')
+  button.style('padding', '12px 16px');
+  button.style('text-align', 'center');
+  button.style('display', 'inline-block');
+  button.style('font-size', '12px');
+  button.style('cursor', 'pointer');
+  button.mouseOver(hover);
+  button.mouseOut(notHover);
+}
+
+function notHover() {
+  button.style('background-color', '#C100D1');
+}
+
+function hover() {
+  button.style('background-color', '#8E00D1');
 }
 
 function checkSolution() {
