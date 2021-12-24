@@ -5,7 +5,7 @@ let ind
 let inp
 let button
 let timer;
-let puzzlecount = 3;
+let puzzlecount = 5;
 
 
 class element {
