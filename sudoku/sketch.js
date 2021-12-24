@@ -31,7 +31,7 @@ function setup() {
 
 function createCheckButton() {
   button = createButton("Ellenőrzés");
-  button.position(boardSize-120, boardSize+20);
+  button.position(canvasSize-120, canvasSize+20);
   button.mousePressed(checkSolution);
   button.size(100);
   button.style('background-color', '#8E00D1');
