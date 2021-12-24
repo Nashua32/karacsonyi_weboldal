@@ -6,7 +6,7 @@ let shootcsaba;
 const playerSize = 60
 const cannonSize = 30
 const bulletSize = 10
-const insultCount = 5;
+const insultCount = 2;
 let say;
 let insult=0;
 
@@ -39,6 +39,11 @@ let players = [];
 let tibi
 let csaba
 
+function preload() {
+  imgtibi=loadImage("tibi.png");
+  imgcsaba = loadImage("csaba.png");
+}
+
 function setup() {
   boardSize = min(windowWidth, windowHeight)*0.8;
   createCanvas(boardSize, boardSize+100);
@@ -51,8 +56,9 @@ function setup() {
   players.push(tibi);
   players.push(csaba);
   frameRate(50);
-  insultOn = false;
   textAlign(CENTER, CENTER);
+  imageMode(CENTER);
+
 }
 
 
@@ -114,9 +120,11 @@ function drawPlayerStuff() {
   stroke(0);
   fill(40, 205,0);
   circle(tibi.x, tibi.y, playerSize);
+  image(imgtibi, tibi.x, tibi.y, playerSize*0.9, playerSize*0.9);
   circle(tibi.x+cos(tibi.dir)*(playerSize/2+cannonSize/2), tibi.y+sin(tibi.dir)*(playerSize/2+cannonSize/2), cannonSize);
   fill(110, 10, 180);
   circle(csaba.x, csaba.y, playerSize);
+  image(imgcsaba, csaba.x, csaba.y, playerSize*0.9, playerSize*0.9);
   circle(csaba.x+cos(csaba.dir)*(playerSize/2+cannonSize/2), csaba.y+sin(csaba.dir)*(playerSize/2+cannonSize/2), cannonSize);
   noStroke();
   textSize(15);
