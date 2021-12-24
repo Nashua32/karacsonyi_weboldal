@@ -6,7 +6,7 @@ let shootcsaba;
 const playerSize = 60
 const cannonSize = 30
 const bulletSize = 10
-const insultCount = 2;
+const insultCount = 5;
 let say;
 let insult=0;
 
