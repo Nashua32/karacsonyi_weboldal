@@ -72,7 +72,7 @@ function movePlayer(item) {
       item.x += cos(item.dir)*2;
       item.y += sin(item.dir)*2;
     }
-    if (keyIsDown(item.backwards)) {
+    if (keyIsDown(item.backwards) && (item.x-cos(item.dir)*2)<boardSize-playerSize/2 && (item.x-cos(item.dir)*2)>playerSize/2 && (item.y-sin(item.dir)*2)>playerSize/2 && (item.y-sin(item.dir)*2)<boardSize-playerSize/2) {
       item.x -= cos(item.dir)*2;
       item.y -= sin(item.dir)*2;
     }  
